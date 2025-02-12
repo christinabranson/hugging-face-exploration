@@ -1,0 +1,226 @@
+
+
+node_modules/
+!/.gitattributes
+!/.projen/tasks.json
+!/.projen/deps.json
+!/.projen/files.json
+!/.github/workflows/pull-request-lint.yml
+!/.npmrc
+poetry-requirements.txt
+!/poetry.toml
+!/pyproject.toml
+!/tsconfig.json
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# MacOS
+.DS_Store
+!/.python-version
+!/.github/workflows/upgrade-projen.yml
+!/.github/actions/setup-project/action.yml
+!/.github/workflows/upgrade-projen-major.yml
+reports
+!/.github/workflows/service-ci-pipeline.yml
+dist/
+!/.github/workflows/cleanup-prerelease.yml
+!/.github/actions/format-project/action.yml
+!/infrastructure/generated/lambdas/activate_generation_version.py
+!/infrastructure/generated/lambdas/alert_hll_partition_sync_error.py
+!/infrastructure/generated/lambdas/clone_active_version.py
+!/infrastructure/generated/lambdas/create_generation_version.py
+!/infrastructure/generated/lambdas/database_migrations.py
+!/infrastructure/generated/lambdas/deploy_sketch.py
+!/infrastructure/generated/lambdas/drop_unused_versions.py
+!/infrastructure/generated/lambdas/get_all_feeds_for_sync.py
+!/infrastructure/generated/lambdas/get_all_stats_for_sync.py
+!/infrastructure/generated/lambdas/get_batch_requests.py
+!/infrastructure/generated/lambdas/get_batch.py
+!/infrastructure/generated/lambdas/get_data_feed_config.py
+!/infrastructure/generated/lambdas/get_data_feed_refresh_history.py
+!/infrastructure/generated/lambdas/get_table_fields.py
+!/infrastructure/generated/lambdas/get_version_diff.py
+!/infrastructure/generated/lambdas/hll_rollup_notify_execution_starting.py
+!/infrastructure/generated/lambdas/hll_rollups_define_execution_parameters.py
+!/infrastructure/generated/lambdas/hll_rollups_define_rollup_requests.py
+!/infrastructure/generated/lambdas/hll_rollups_generate_mapfiles.py
+!/infrastructure/generated/lambdas/hll_rollups_notify_failure.py
+!/infrastructure/generated/lambdas/hll_rollups_notify_step_failure.py
+!/infrastructure/generated/lambdas/hll_rollups_notify_step_success.py
+!/infrastructure/generated/lambdas/hll_rollups_notify_success.py
+!/infrastructure/generated/lambdas/list_batches.py
+!/infrastructure/generated/lambdas/list_common_models.py
+!/infrastructure/generated/lambdas/list_data_feed_configs.py
+!/infrastructure/generated/lambdas/list_refresh_configs.py
+!/infrastructure/generated/lambdas/list_versions.py
+!/infrastructure/generated/lambdas/orchestration_collect_completed_batch.py
+!/infrastructure/generated/lambdas/orchestration_enrich_request.py
+!/infrastructure/generated/lambdas/orchestration_publish_stats_results.py
+!/infrastructure/generated/lambdas/orchestration_update_request_status.py
+!/infrastructure/generated/lambdas/publish_sketch_deployment_completion_event.py
+!/infrastructure/generated/lambdas/request_new_run.py
+!/infrastructure/generated/lambdas/rerun_request.py
+!/infrastructure/generated/lambdas/save_data_feed_config.py
+!/infrastructure/generated/lambdas/start_verifying_hll_index.py
+!/infrastructure/generated/lambdas/sync_version.py
+!/infrastructure/generated/lambdas/table_exists.py
+!/infrastructure/generated/lambdas/trigger_feed_automated_refresh.py
+!/.github/workflows/static-code-analysis.yml
+!/.github/workflows/create-veracode-baseline.yml
+!/.github/workflows/run-veracode-baseline.yml
+.sphinx/docs/html
+.sphinx/_apidocs
+!/.github/workflows/docgen.yml
+!/.sphinx/_static/theme-overrides.css
+!/.sphinx/readme.rst
+!/service.datadog.yaml
+outputs.json
+.hv-srv-config.json
+outputs.test-harness.json
+!/cdk.json
+/cdk.out/
+.cdk.staging/
+!/infrastructure/__init__.py
+!/infrastructure/__main__.py
+!/.pre-commit-config.yaml
+!/.github/workflows/dev-environment.yml
+!/.github/workflows/staging-environment.yml
+!/.github/workflows/prod-environment.yml
+!/runtime/__init__.py
+!/infrastructure/generated/__init__.py
+!/runtime/lambdas/__init__.py
+!/infrastructure/generated/lambdas/__init__.py
+!/runtime/containers/__init__.py
+!/infrastructure/generated/containers/__init__.py
+!/runtime/shared/__init__.py
+!/infrastructure/generated/shared/__init__.py
+!/runtime/wheels/__init__.py
+!/infrastructure/generated/wheels/__init__.py
+!/infrastructure/generated/webapps/__init__.py
+!/.nvmrc
+!/.projenrc.ts
+!/.sphinx/conf.py
+!/.sphinx/index.rst
