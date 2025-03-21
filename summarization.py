@@ -2,6 +2,11 @@ import argparse
 from transformers import pipeline
 import os
 
+SUMMARIZATION_MODEL = "facebook/bart-large-cnn"
+QA_MODEL = "deepset/roberta-base-squad2"
+# QA_MODEL = "impira/layoutlm-document-qa"
+QA_MODEL = "google-bert/bert-large-uncased-whole-word-masking-finetuned-squad"
+
 def main(input_file):
     """
     Summarize a crime story and answer key questions about the crime.
@@ -14,7 +19,7 @@ def main(input_file):
 
     # Load the summarization pipeline
     print("Loading summarization model...")
-    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    summarizer = pipeline("summarization", model=SUMMARIZATION_MODEL)
 
     # Read the text file
     with open(input_file, 'r') as f:
@@ -35,7 +40,8 @@ def main(input_file):
 
     # Load the question-answering pipeline
     print("Loading question-answering model...")
-    qa_model = pipeline("question-answering", model="deepset/roberta-base-squad2")
+    # qa_model = pipeline("question-answering", model=QA_MODEL)
+    qa_model = pipeline('question-answering', model=QA_MODEL, tokenizer=QA_MODEL)
 
     questions = [
         "Who was the victim of the crime?",
